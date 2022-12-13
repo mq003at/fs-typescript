@@ -30,15 +30,15 @@ Implement the following classes, interface, and codes (you can decide which file
 
     - And 5 methods, they are (their functions are in their names):
 
-        - getName(), getter for name.
+        - `getName()`, getter for name.
 
-        - getCustomers(), getter for customers.
+        - `getCustomers()`, getter for customers.
 
-        - addCustomer(), has a parameter of type Customer and returns a boolean. Returns true if the customer was added successfully or false otherwise (each customer should be added once only).
+        - `addCustomer()`, has a parameter of type Customer and returns a boolean. Returns true if the customer was added successfully or false otherwise (each customer should be added once only).
 
-        - addCustomerTransaction(), has a parameter of type string (id of customer), a number (for transaction) and returns a boolean. Returns true if the customers transaction is added successfully or false otherwise.
+        - `addCustomerTransaction()`, has a parameter of type string (id of customer), a number (for transaction) and returns a boolean. Returns true if the customers transaction is added successfully or false otherwise.
 
-        - findCustomer(), has one parameter of type string (`id` of customer) and returns a customer. Return the customer if they exist, null otherwise.
+        - `findCustomer()`, has one parameter of type string (`id` of customer) and returns a customer. Return the customer if they exist, null otherwise.
 
 3. Class Customer
 
@@ -48,15 +48,15 @@ Implement the following classes, interface, and codes (you can decide which file
 
     - And 5 methods:
 
-        - getName(), getter for name.
+        - `getName()`, getter for name.
 
-        - getId(), getter for id.
+        - `getId()`, getter for id.
 
-        - getTransactions(), getter for transactions.
+        - `getTransactions()`, getter for transactions.
 
-        - getBalance(), return the current balance from the transactions.
+        - `getBalance()`, return the current balance from the transactions.
 
-        - addTransaction(), has one parameter of type number and return true if transaction is added sucessfully. You need to make sure that balance cannot be negative. This function should add the successful transaction into transactions array.
+        - `addTransaction()`, has one parameter of type number and return true if transaction is added sucessfully. You need to make sure that balance cannot be negative. This function should add the successful transaction into transactions array.
 
 4. Interface Transaction
 
