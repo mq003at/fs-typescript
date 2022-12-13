@@ -1,6 +1,11 @@
-# Create a simple banking application
+# TypeScript Assignment
 
-Implement the following classes, interface, and codes (you can decide which file to put each type). All the properties must be kept private, while you can make the methods as public
+- Complete two challenges: banking application & fetching e-commerce data.
+- Check the scripts in `package.json` to run the suitable command for each challenge
+
+## Create a simple banking application
+
+Implement the following classes, interface, and codes (you can decide which file to put each type, but do not write all the types in `index.ts` or `bank.ts`). All the properties must be kept private, while you can make the methods as public
 
 1. Class Bank
 
@@ -60,9 +65,9 @@ Implement the following classes, interface, and codes (you can decide which file
 
 4. Interface Transaction
 
-    - It has 2 properties, a string called `name` and a Date called `date`. `date` refers to the time that transaction has been created.
+    - It has 2 properties, a number `amount`, and a Date called `date`. `date` refers to the time that transaction has been created.
 
-Run the following codes in `index.ts`and share your results and findings in the Slack channel
+Run the following codes in `bank.ts`and share your results and findings in the Slack channel
 
 ```
 const arizonaBank = new Bank("Arizona")
@@ -93,3 +98,8 @@ console.log(customer1.getBalance())
 console.log(arizonaBank.listCustomers(westBranch, true))
 console.log(arizonaBank.listCustomers(sunBranch,true))
 ```
+
+## Fetch E-commerce data
+
+Explore the codes in `index.ts` and folder `types`. Complete the codes or fix bugs
+if needed to producce the expected result according to the codes in `index.ts`.
