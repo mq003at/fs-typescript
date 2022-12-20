@@ -13,8 +13,8 @@ console.log(users.sortList("desc")) //Expect to see users array in new order of 
 /** find user by email.
  * Take a parameter of type string.
  * Return a found user or null*/
-const findUserByEmail = (email) => {
-    users.find(user => user.email === email)
+const findUserByEmail = (email: string) => {
+   users.find((user) => user.email === email)
 }
 const foundUser = findUserByEmail("john@mail.com")
 console.log(foundUser) //expect to see user with email "john@mail.com" in the console
