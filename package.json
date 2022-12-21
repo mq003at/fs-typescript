@@ -2,11 +2,10 @@
   "name": "typescript",
   "version": "1.0.0",
   "description": "",
-  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch:index": "nodemon src/index.ts",
-    "watch:bank": "nodemon --watch build src/Bank/bank.ts",
+    "watch:bank": "nodemon -L --watch build src/Bank/bank.ts",
     "build": "tsc"
   },
   "author": "",
