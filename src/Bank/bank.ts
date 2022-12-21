@@ -83,5 +83,5 @@ arizonaBank.addCustomerTransaction(westBranch, customer2.getId(), 3000);
 
 customer1.addTransaction(-1000);
 console.log("Customer 1's balance: " + customer1.getBalance());
-console.log(arizonaBank.listCustomer(westBranch, true));
-console.log(arizonaBank.listCustomer(sunBranch, true));
+arizonaBank.listCustomer(westBranch, true)
+arizonaBank.listCustomer(sunBranch, true)
