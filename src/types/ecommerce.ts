@@ -28,11 +28,22 @@ export class List<T extends Entity> extends Array<T> {
     id does not exist. Only add all the items to the array if every item satisfies the condition.
     Return 1 if can push all new items to the array, otherwise return 0 */
   push(...items: T[]): number {
-    for (const item of items) {
-      if (this.some((i) => i.id === item.id)) return 0;
-    }
+    // let arr = items.map((item) =>
+    //   this.some((original) => original.id === item.id)
+    // );
+    // console.log("arr", arr)
+    // if (!arr.includes(false)) return 0;
 
-    this.push(...items);
+    // for (let i = 0; i < items.length; i++) {
+    //   this[this.length] = items[i];
+    // }
+    // return 1;
+
+    items.forEach(item => {
+      if (this.find(data => data.id === item.id)) return 0
+    })
+
+    items.forEach(item => this[this.length] = item);
     return 1;
   }
 }

@@ -4,8 +4,8 @@
   "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch:index": "nodemon src/index.ts",
-    "watch:bank": "nodemon -L --watch build src/Bank/bank.ts",
+    "watch:index": "nodemon --watch build src/index.ts",
+    "watch:bank": "nodemon --watch build src/Bank/bank.ts",
     "build": "tsc"
   },
   "author": "",
