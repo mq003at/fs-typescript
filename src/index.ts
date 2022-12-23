@@ -10,8 +10,8 @@ async function app() {
   await users.fetchAll("https://api.escuelajs.co/api/v1/users");
   await products.fetchAll("https://api.escuelajs.co/api/v1/products");
 
-  console.log(users.sortList("desc")); //Expect to see users array in new order of id decreasing
-  console.log("user", users);
+  console.log("List", users.sortList("desc")); //Expect to see users array in new order of id decreasing
+  console.log("\nuser", users);
 
   /** find user by email.
    * Take a parameter of type string.
@@ -20,17 +20,17 @@ async function app() {
     return users.find((user) => user.email === email);
   };
   const foundUser = findUserByEmail("john@mail.com");
-  console.log(foundUser); //expect to see user with email "john@mail.com" in the console
+  console.log("\nfound user: ", foundUser); //expect to see user with email "john@mail.com" in the console
 
   /** Find all products with titles matched the search, case insentitive.
    * Take a parameter of type string.
    * Return an array
    */
   const findProductsByText = (search: string): Product[] => {
-    return products.filter((products) => products.title === search);
+    return products.filter((products) => products.title.toLowerCase().includes(search.toLowerCase()));
   };
   const foundProducts = findProductsByText("shirt");
-  console.log(foundProducts); //expect to see an array of all found products
+  console.log("found Product", foundProducts); //expect to see an array of all found products
 
   const testPush1 = users.push(
     {
